@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Array</title>
+
+
+    <style>
+        
+        .Arr {
+            display: flex;justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: black;
+        }
+
+        .Acc21 {
+            display: flex;justify-content: center;
+            color: white;
+            font-size: xx-large;
+
+        }
+
+        .Des21 {
+            display: flex;justify-content: center;
+            color:white;
+            font-size: xx-large;
+
+        }
+
+        .Acc{
+            border: 3px solid white;
+            margin-left: 630px;
+            margin-right: 630px;
+            margin-bottom: 50px;
+            display: flex;justify-content: center;
+
+        }
+
+        .Des{
+            display: flex;justify-content: center;
+            border: 3px solid white;
+            margin-left: 630px;
+            margin-right: 630px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+
+        button{
+            color: white;
+            background-color: black ;
+            display: flex; justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: black ;">
+</body>
+    <script>
+
+        function Accending() {
+            const number = [262, 47, 5, 8, 6, 87];
+            const A = number.sort((a, b) => a - b);
+            document.getElementById("Acc22").innerHTML = A;
+        }
+
+        function Descending() {
+            const number = [262, 47, 5, 8, 6, 87];
+            const D = number.sort((a, b) => b - a);
+            document.getElementById("Des22").innerHTML = D;
+        }
+
+    </script>
+
+    <div class="Arr">
+
+        <h1>Array = [262, 47, 5, 8, 6, 87]</h1>
+    </div><br>
+
+    <div class="Acc">
+
+        <button id="Acc11" name="Acc12" onclick="Accending()">Assending Sorting</button>
+    </div>
+
+    <div class="Acc21" id="Acc22"></div><br>
+
+    <div class="Des">
+
+        <button id="Des11" name="Des12" onclick="Descending()">Desending Sorting</button>
+    </div>
+
+    <div class="Des21" id="Des22"></div>
+
+    </div>
+
+
+</body>
+
+</html>

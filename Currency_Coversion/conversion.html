@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Conversion</title>
+
+    <Script>
+
+        function R_$ (form){
+            form.dollar.value = form.ruppes.value*81; 
+        }
+        function $_R (form){
+            form.ruppes.value = form.dollar.value/81;
+        }
+
+
+
+    </Script>
+
+    
+</head>
+<body>
+    <h1>Conversion</h1>
+
+    <form>
+    
+
+        <input type ="text" name = "dollar" ><br>
+        <input type="button" value ="dollartoruppes" onclick ="$_R(this.form)">
+        <input type="button" value="ruppestoDollar" onclick ="R_$(this.form)"><br>
+
+        <br>
+    
+        <input for="text" name = "ruppes"><br>
+        
+        <br>
+    </form>
+    
+</body>
+</html>
